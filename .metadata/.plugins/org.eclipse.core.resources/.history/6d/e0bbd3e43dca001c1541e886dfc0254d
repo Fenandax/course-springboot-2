@@ -1,0 +1,5 @@
+package com.example.course.resourcers.exceptions;
+
+public class ResourceExceptionHandler {
+
+}

@@ -1,0 +1,16 @@
+package com.example.course.resourcers.exceptions;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+import com.example.course.services.exceptions.ResourceNotFoundException;
+
+@ControllerAdvice
+public class ResourceExceptionHandler {
+
+	public ResponseEntity<StandardError> resourceNotFound(ResourceNotFoundException e, HttpServletRequest request) {
+		
+	}
+}
