@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Profile;
 
 import com.example.course.entities.Category;
 import com.example.course.entities.Order;
-import com.example.course.entities.Product;
 import com.example.course.entities.User;
 import com.example.course.entities.enums.OrderStatus;
 import com.example.course.repositories.CategoryRepository;
@@ -58,7 +57,6 @@ public class TestConfig implements CommandLineRunner{
 		userRepository.saveAll(Arrays.asList(u1, u2));
 		orderRepository.saveAll(Arrays.asList(o1, o2, o3));
 		categoryRepository.saveAll(Arrays.asList(cat1, cat2, cat3));
-		productRepository.saveAll(Arrays.asList(p1, p2, p3, p4, p5));
 	}
 	                     
 	

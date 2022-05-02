@@ -1,0 +1,29 @@
+package com.example.course.entities;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Product {
+
+	private Long id;
+	private String name;
+	private String description;
+	private Double price;
+	private String imgUrl;
+	
+	private Set<Category> categories = new HashSet<>();
+
+	public Product() {
+		
+	}
+	public Product(Long id, String name, String description, Double price, String imgUrl) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.imgUrl = imgUrl;
+	}
+	
+	
+}
